@@ -29,7 +29,7 @@ running_processes = []
 async def run_attack_command_async(target_ip, target_port, duration, chat_id, username, start_msg_id):
     max_duration = 420
     duration = min(int(duration), max_duration)
-    command = f"./m {target_ip} {target_port} {duration}"
+    command = f"./Bgmi {target_ip} {target_port} {duration}"
         
     try:
         process = await asyncio.create_subprocess_shell(
